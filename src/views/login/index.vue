@@ -132,7 +132,9 @@ export default {
     .login-form-wrap {
       min-width: 300px;
       padding: 30px 50px 10px;
-      background-color: rgba(0, 0, 0, .4);
+      background-color: rgba(247, 245, 245, 0.1);
+      backdrop-filter: blur(5px);
+      border-radius: 20px;
       .login-head {
         display: flex;
         justify-content: center;

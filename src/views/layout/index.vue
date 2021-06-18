@@ -4,11 +4,11 @@
       class="aside"
       width="auto"
     >
-      <Aside/>
+      <Aside :isCollapse='isCollapse'/>
     </el-aside>
     <el-container>
       <el-header class="header">
-        <Header/>
+        <Header @toggleAside='toggleAside'/>
       </el-header>
       <el-main class="main">
         <!-- 子路由出口 -->
@@ -31,14 +31,19 @@ export default {
   props: {},
   data () {
     return {
-      userInfo: ''
+      userInfo: '',
+      isCollapse: false
     }
   },
   computed: {},
   watch: {},
   created () {},
   mounted () {},
-  methods: {}
+  methods: {
+    toggleAside () {
+      this.isCollapse = !this.isCollapse
+    }
+  }
 }
 </script>
 

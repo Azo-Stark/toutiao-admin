@@ -198,7 +198,6 @@ export default {
       this.loadArticle(page)
     },
     async getChannels () {
-      console.log(1111)
       const { data: res } = await getArticleChannels()
       this.channels = res.data.channels
     },

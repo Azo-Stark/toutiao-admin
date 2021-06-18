@@ -1,8 +1,8 @@
 <template>
   <div class="header-container">
-    <div>
+    <div @click="$emit('toggleAside')">
       <i class="el-icon-s-fold"></i>
-      <span>江苏传智播客科技教育有限公司</span>
+      <span></span>
     </div>
     <el-dropdown>
       <div class="avatar-wrap">

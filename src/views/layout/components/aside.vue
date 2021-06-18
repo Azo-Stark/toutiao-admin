@@ -42,9 +42,15 @@
 <script>
 export default {
   name: 'aside',
+  props: {
+    isCollapse: {
+      require: true,
+      default: () => true
+    }
+  },
   data () {
     return {
-      isCollapse: false // 侧边栏收起
+      // isCollapse: false // 侧边栏收起
     }
   }
 }
